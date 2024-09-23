@@ -12,6 +12,10 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { P404Component } from './p404/p404.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
+import { ContactComponent } from './contact/contact.component';
+import { DataService } from './data.service';
+import { D3DonutComponent } from './d3-donut/d3-donut.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,10 @@ import { HttpClientModule } from '@angular/common/http';
     ArticleComponent,
     AboutComponent,
     LoginComponent,
-    P404Component
+    P404Component,
+    BreadcrumbsComponent,
+    ContactComponent,
+    D3DonutComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    DataService
   ],
   bootstrap: [AppComponent]
 })

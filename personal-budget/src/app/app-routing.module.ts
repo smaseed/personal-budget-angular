@@ -4,19 +4,28 @@ import { AboutComponent } from './about/about.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { LoginComponent } from './login/login.component';
 import { P404Component } from './p404/p404.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomepageComponent
+    component: HomepageComponent,
+    data: { breadcrumbs: ['HomePage']}
   },
   {
     path: 'about',
-    component: AboutComponent
+    component: AboutComponent,
+    data: { breadcrumbs: ['About']}
   },
   {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
+    data: { breadcrumbs: ['Login']}
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+    data: { breadcrumbs: ['Contact']}
   },
   {
     path: '**',

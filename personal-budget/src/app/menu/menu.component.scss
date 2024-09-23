@@ -1,0 +1,36 @@
+$color_1: #fff;
+$color_2: #4d5791;
+$background-color_1: #4d5791;
+$background-color_2: white;
+
+nav.menu {
+	width: 100%;
+	background-color: $background-color_1;
+	height: 44px;
+	padding: 0 40px;
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline-block;
+		li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: inline-block;
+			a {
+				display: block;
+				padding: 0 20px;
+				line-height: 44px;
+				font-size: 1.4em;
+				text-decoration: none;
+				color: $color_1;
+				margin: 0;
+				&:hover {
+					background-color: $background-color_2;
+					color: $color_2;
+				}
+			}
+		}
+	}
+}
